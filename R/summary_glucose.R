@@ -1,3 +1,12 @@
+#' Compute Glucose Summary Statistics
+#'
+#' This function computes the mean, median, minimum, maximum,
+#' first quartile, and the third quartile of an indidividual's
+#' overall glucose levels
+#' @param df Data frame read through readfile
+#' @return A dataframe containing the mean, median, minimum,
+#' maximum, quartile1, and quartile3 of glucose levels
+#' @export
 summary_glucose <- function(df) {
   meanG = mean(df$glucose)
   medianG = median(df$glucose)

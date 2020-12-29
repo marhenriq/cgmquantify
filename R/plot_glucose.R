@@ -1,5 +1,5 @@
 plot_glucose <- function(df_CGM) {
-  ggplot(df_CGM) +
+  ggplot2::ggplot(df_CGM) +
     geom_point(data = df_CGM, aes(x = time_of_day, y = glucose),
                col = "orange", cex = 0.5) +
     geom_line(data = df_CGM, aes(x = time_of_day, y = glucose),

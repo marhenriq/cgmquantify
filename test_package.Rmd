@@ -256,7 +256,7 @@ return(mean(f$rh))
 
 ## TO DO:
 
-- intradaysd
+
 
 - MAGE
 - ADRR
