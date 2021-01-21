@@ -16,3 +16,4 @@ TIR <- function(df, sd = 1, sr = 5) {
   TIR = nrow(subset(df, df$glucose <= up | df$glucose >= dw)) * sr
   return(TIR)
 }
+
