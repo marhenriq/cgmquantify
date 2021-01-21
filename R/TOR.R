@@ -16,3 +16,4 @@ TOR <- function(df, sd = 1, sr = 5) {
   TOR = nrow(subset(df, df$glucose >= up | df$glucose <= dw)) * sr
   return(TOR)
 }
+

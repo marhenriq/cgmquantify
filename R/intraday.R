@@ -41,4 +41,4 @@ intradaysd <- function(df) {
   return(data.frame(intradaysd_mean, intradaysd_median, intradaysd_sd))
 }
 
-intradaysd(df_CGM)
+
