@@ -7,6 +7,8 @@
 #' @return A dataframe containing the mean, median, minimum,
 #' maximum, quartile1, and quartile3 of glucose levels
 #' @export
+#' @importFrom stats median
+#' @importFrom stats quantile
 summary_glucose <- function(df) {
   meanG = mean(df$glucose)
   medianG = median(df$glucose)

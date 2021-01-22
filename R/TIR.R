@@ -10,6 +10,7 @@
 #' (default is the Dexcom -> 5 minutes)
 #' @return A numeric value representing TIR
 #' @export
+#' @import stats
 TIR <- function(df, sd = 1, sr = 5) {
   up = mean(df$glucose) + sd*sd(df$glucose)
   dw = mean(df$glucose) - sd*sd(df$glucose)

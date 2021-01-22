@@ -8,8 +8,6 @@ MGN(df)
 }
 \arguments{
 \item{df}{Data frame read through readfile}
-
-\item{sd}{Standard deviation indicating glycemic excursion, default = 1}
 }
 \value{
 A numeric value representing MGN

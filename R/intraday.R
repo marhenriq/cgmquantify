@@ -29,10 +29,11 @@ intradaycv <- function(df) {
 #' @return A data frame containing the mean, median, and standard deviation
 #' of the intraday standard deviations.
 #' @export
+#' @import stats
 intradaysd <- function(df) {
   intradaysd = vector()
   for (i in unique(df$Date)) {
-    intradaysd <- append(intradaysd, sd(subset(df, df$Date == i)$glucose))
+    intradaysd <- append(intradaysd, sd(subset(df, df$Date == as.Date(i))$glucose))
   }
   intradaysd_mean = mean(intradaysd)
   intradaysd_median = median(intradaysd)

@@ -7,6 +7,7 @@
 #' @param sd Standard deviation indicating glycemic excursion, default = 1
 #' @return A numeric value representing MAGE
 #' @export
+#' @importFrom stats sd
 MGE <- function(df, sd = 1) {
   up = mean(df$glucose) + sd*sd(df$glucose)
   dw = mean(df$glucose) - sd*sd(df$glucose)
@@ -21,9 +22,9 @@ MGE <- function(df, sd = 1) {
 #' glycemic excursions indicated by standard deviation, default = 1
 #'
 #' @param df Data frame read through readfile
-#' @param sd Standard deviation indicating glycemic excursion, default = 1
 #' @return A numeric value representing MGN
 #' @export
+#' @importFrom stats sd
 MGN <- function(df) {
   up = mean(df$glucose) + sd(df$glucose)
   dw = mean(df$glucose) - sd(df$glucose)
