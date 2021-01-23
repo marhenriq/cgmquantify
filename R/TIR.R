@@ -14,7 +14,7 @@
 TIR <- function(df, sd = 1, sr = 5) {
   up = mean(df$glucose) + sd*sd(df$glucose)
   dw = mean(df$glucose) - sd*sd(df$glucose)
-  TIR = nrow(subset(df, df$glucose <= up | df$glucose >= dw)) * sr
+  TIR = nrow(subset(df, df$glucose <= up & df$glucose >= dw)) * sr
   return(TIR)
 }
 

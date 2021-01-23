@@ -7,6 +7,6 @@
 #' @export
 #' @import stats
 J_index <- function(df) {
-  J = 0.001*((mean(df$glucose) + sd(df$glucose))*2)
+  J = 0.001*((mean(df$glucose) + sd(df$glucose))^2)
   return(J)
 }

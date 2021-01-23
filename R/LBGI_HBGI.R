@@ -7,12 +7,12 @@
 #' @export
 LBGI_HBGI <- function(df) {
   f = data.frame(log_glucose = log(df$glucose^1.084) - 5.381)
-  f <- mutate(f,
-              rl = case_when(
+  f <- dplyr::mutate(f,
+              rl = dplyr::case_when(
                 log_glucose <= 0 ~
                   22.77*(log_glucose^2),
                 TRUE ~ 0),
-              rh = case_when(
+              rh = dplyr::case_when(
                 log_glucose > 0 ~
                   22.77*(log_glucose^2),
                 TRUE ~ 0)
@@ -33,9 +33,9 @@ LBGI_HBGI <- function(df) {
 #' @return A numeric value representing LBGI
 #' @export
 LBGI <- function(df) {
-  f = data.frame(log_glucose = log(df$glucose^1.084) - 5.381)
-  f <- mutate(f,
-              rl = case_when(
+  f = data.frame(log_glucose = (log(df$glucose)^1.084) - 5.381)
+  f <- dplyr::mutate(f,
+              rl = dplyr::case_when(
                 log_glucose <= 0 ~
                   22.77*(log_glucose^2),
                 TRUE ~ 0))
@@ -52,9 +52,9 @@ LBGI <- function(df) {
 #' @return A numeric value representing HBGI
 #' @export
 HBGI <- function(df) {
-  f = data.frame(log_glucose = log(df$glucose^1.084) - 5.381)
-  f <- mutate(f,
-              rh = case_when(
+  f = data.frame(log_glucose = (log(df$glucose)^1.084) - 5.381)
+  f <- dplyr::mutate(f,
+              rh = dplyr::case_when(
                 log_glucose > 0 ~
                   22.77*(log_glucose^2),
                 TRUE ~ 0))
