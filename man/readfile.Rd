@@ -13,6 +13,6 @@ readfile(filename)
 transformed data frame for further analysis
 }
 \description{
-This function reads in a data frame with variable names
+This function reads in a .csv with variable names
 Timestamp..YYYY.MM.DDThh.mm.ss and Glucose.Value..mg.dL
 }

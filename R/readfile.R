@@ -1,6 +1,6 @@
 #' Read in Data Frame
 #'
-#' This function reads in a data frame with variable names
+#' This function reads in a .csv with variable names
 #' Timestamp..YYYY.MM.DDThh.mm.ss and Glucose.Value..mg.dL
 #'
 #' @param filename .csv file of data frame to be read
