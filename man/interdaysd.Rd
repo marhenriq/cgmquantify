@@ -15,3 +15,8 @@ A numeric value representing interday sd
 \description{
 This function computes the interday standard deviation
 }
+\examples{
+mydatafile <- system.file("extdata", "my_data_file.csv", package = "cgmquantify")
+mydata <- readfile(mydatafile)
+interdaysd(mydata)
+}

@@ -18,3 +18,8 @@ This function computes the mean, median, minimum, maximum,
 first quartile, and the third quartile of an indidividual's
 overall glucose levels
 }
+\examples{
+mydatafile <- system.file("extdata", "my_data_file.csv", package = "cgmquantify")
+mydata <- readfile(mydatafile)
+summary_glucose(mydata)
+}

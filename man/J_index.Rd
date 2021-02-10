@@ -15,3 +15,8 @@ A numeric value representing J-index
 \description{
 This function computes J-index, a glycemic variability metrix
 }
+\examples{
+mydatafile <- system.file("extdata", "my_data_file.csv", package = "cgmquantify")
+mydata <- readfile(mydatafile)
+J_index(mydata)
+}

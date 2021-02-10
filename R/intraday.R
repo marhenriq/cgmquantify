@@ -6,6 +6,10 @@
 #' @param df Data frame read through readfile
 #' @return A data frame containing the mean, median, and standard deviation
 #' of the intraday coefficients of variation.
+#' @examples
+#' mydatafile <- system.file("extdata", "my_data_file.csv", package = "cgmquantify")
+#' mydata <- readfile(mydatafile)
+#' intradaycv(mydata)
 #' @export
 intradaycv <- function(df) {
   intradaycv = vector()
@@ -28,12 +32,16 @@ intradaycv <- function(df) {
 #' @param df Data frame read through readfile
 #' @return A data frame containing the mean, median, and standard deviation
 #' of the intraday standard deviations.
+#' @examples
+#' mydatafile <- system.file("extdata", "my_data_file.csv", package = "cgmquantify")
+#' mydata <- readfile(mydatafile)
+#' intradaysd(mydata)
 #' @export
 #' @import stats
 intradaysd <- function(df) {
   intradaysd = vector()
   for (i in unique(df$Date)) {
-    intradaysd <- append(intradaysd, sd(subset(df, df$Date == as.Date(i))$glucose))
+    intradaysd <- append(intradaysd, sd(subset(df, df$Date == i)$glucose))
   }
   intradaysd_mean = mean(intradaysd)
   intradaysd_median = median(intradaysd)

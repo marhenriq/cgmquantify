@@ -4,6 +4,11 @@
 #' time period in which data was collected.
 #'
 #' @param df Data frame read through readfile
+#' @return None
+#' @examples
+#' mydatafile <- system.file("extdata", "my_data_file.csv", package = "cgmquantify")
+#' mydata <- readfile(mydatafile)
+#' plot_glucose(mydata)
 #' @export
 plot_glucose <- function(df) {
   ggplot2::ggplot(df) +
@@ -15,5 +20,5 @@ plot_glucose <- function(df) {
     ggplot2::theme_bw() +
     ggplot2::ylab("Glucose Level") +
     ggplot2::xlab("Time of Day") +
-    ggplot2::labs(title = "CGM data for Participant #1")
+    ggplot2::labs(title = "CGM data for Participant")
 }

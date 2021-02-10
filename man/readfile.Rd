@@ -16,3 +16,9 @@ transformed data frame for further analysis
 This function reads in a .csv with variable names
 Timestamp..YYYY.MM.DDThh.mm.ss and Glucose.Value..mg.dL
 }
+\examples{
+\donttest{
+mydatafile <- system.file("extdata", "my_data_file.csv", package = "cgmquantify")
+readfile(mydatafile)
+}
+}

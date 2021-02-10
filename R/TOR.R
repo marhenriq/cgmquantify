@@ -9,6 +9,10 @@
 #' @param sr Sampling rate inverse in minutes of the CGM
 #' (default is the Dexcom -> 5 minutes)
 #' @return A numeric value representing TOR
+#' @examples
+#' mydatafile <- system.file("extdata", "my_data_file.csv", package = "cgmquantify")
+#' mydata <- readfile(mydatafile)
+#' TOR(mydata, sd = 1, sr = 5)
 #' @export
 #' @import stats
 TOR <- function(df, sd = 1, sr = 5) {

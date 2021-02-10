@@ -6,6 +6,10 @@
 #' @param df Data frame read through readfile
 #' @return A dataframe containing the mean, median, minimum,
 #' maximum, quartile1, and quartile3 of glucose levels
+#' @examples
+#' mydatafile <- system.file("extdata", "my_data_file.csv", package = "cgmquantify")
+#' mydata <- readfile(mydatafile)
+#' summary_glucose(mydata)
 #' @export
 #' @importFrom stats median
 #' @importFrom stats quantile

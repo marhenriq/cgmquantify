@@ -1,9 +1,10 @@
 Package: cgmquantify
 Type: Package
-Title: R Package for Analyzing Glucose and Glucose Variability
+Title: Analyzing Glucose and Glucose Variability
 Version: 0.1.0
-Author: Maria Henriquez and Brinnae Bent
-Maintainer: Maria Henriquez <marhenriq@gmail.com>
+Authors@R: c(person("Maria", "Henriquez", role = c("aut", "com", "cph", "cre", "trl"), email = "marhenriq@gmail.com"),
+  person("Brinnae", "Bent", role = c("aut", "cph", "dtc"),
+  email = "brinnae.bent@duke.edu"))
 Imports: dplyr, tidyverse, ggplot2, hms, stats, magrittr
 Description: Continuous glucose monitoring (CGM) systems provide real-time, 
   dynamic glucose information by tracking interstitial glucose values 
@@ -14,6 +15,12 @@ Description: Continuous glucose monitoring (CGM) systems provide real-time,
   Here, we provide functions to calculate glucose summary metrics, 
   glucose variability metrics (as defined in clinical publications), 
   and visualizations to visualize trends in CGM data.
+  Cho P, Bent B, Wittmann A, et al. (2020) <https://diabetes.diabetesjournals.org/content/69/Supplement_1/73-LB.abstract>
+  American Diabetes Association (2020) <https://professional.diabetes.org/diapro/glucose_calc>
+  Kovatchev B (2019) <doi:10.1177/1932296819826111>
+  Kovdeatchev BP (2017) <doi:10.1038/nrendo.2017.3>
+  Tamborlane W V., Beck RW, Bode BW, et al. (2008) <doi:10.1056/NEJMoa0805017>
+  Umpierrez GE, P. Kovatchev B (2018) <doi:10.1016/j.amjms.2018.09.010>.
 License: MIT License + file LICENSE
 Encoding: UTF-8
 LazyData: true
@@ -24,3 +31,5 @@ Suggests:
     rmarkdown
 Config/testthat/edition: 2, devtools
 VignetteBuilder: knitr
+Depends: 
+    R (>= 2.10)

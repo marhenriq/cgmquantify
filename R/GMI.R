@@ -4,6 +4,10 @@
 #'
 #' @param df Data frame read through readfile
 #' @return A numeric value representing GMI
+#' @examples
+#' mydatafile <- system.file("extdata", "my_data_file.csv", package = "cgmquantify")
+#' mydata <- readfile(mydatafile)
+#' GMI(mydata)
 #' @export
 
 GMI <- function(df) {

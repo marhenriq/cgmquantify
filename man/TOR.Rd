@@ -22,3 +22,8 @@ A numeric value representing TOR
 This function computes the time outside range (range in standard
 deviations from mean, default = 1).
 }
+\examples{
+mydatafile <- system.file("extdata", "my_data_file.csv", package = "cgmquantify")
+mydata <- readfile(mydatafile)
+TOR(mydata, sd = 1, sr = 5)
+}

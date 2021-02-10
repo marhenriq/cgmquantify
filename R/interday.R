@@ -4,6 +4,10 @@
 #'
 #' @param df Data frame read through readfile
 #' @return A numeric value representing interday cv
+#' @examples
+#' mydatafile <- system.file("extdata", "my_data_file.csv", package = "cgmquantify")
+#' mydata <- readfile(mydatafile)
+#' interdaycv(mydata)
 #' @export
 #' @import stats
 interdaycv <- function(df) {
@@ -19,6 +23,10 @@ interdaycv <- function(df) {
 #' @param df Data frame read through readfile
 #' @return A numeric value representing interday sd
 #' @export
+#' @examples
+#' mydatafile <- system.file("extdata", "my_data_file.csv", package = "cgmquantify")
+#' mydata <- readfile(mydatafile)
+#' interdaysd(mydata)
 #' @import stats
 interdaysd <- function(df) {
   interdaysd = stats::sd(df$glucose)

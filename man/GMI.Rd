@@ -15,3 +15,8 @@ A numeric value representing GMI
 \description{
 This function computes the estimated GMI
 }
+\examples{
+mydatafile <- system.file("extdata", "my_data_file.csv", package = "cgmquantify")
+mydata <- readfile(mydatafile)
+GMI(mydata)
+}

@@ -7,6 +7,11 @@
 #' @return transformed data frame for further analysis
 #' @importFrom utils read.csv
 #' @importFrom magrittr %>%
+#' @examples
+#' \donttest{
+#' mydatafile <- system.file("extdata", "my_data_file.csv", package = "cgmquantify")
+#' readfile(mydatafile)
+#' }
 #' @export
 
 readfile <- function(filename) {

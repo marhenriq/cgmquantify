@@ -5,6 +5,10 @@
 #'
 #' @param df Data frame read through readfile
 #' @return A numeric value representing eA1c
+#' @examples
+#' mydatafile <- system.file("extdata", "my_data_file.csv", package = "cgmquantify")
+#' mydata <- readfile(mydatafile)
+#' eA1c(mydata)
 #' @export
 
 eA1c <- function(df) {

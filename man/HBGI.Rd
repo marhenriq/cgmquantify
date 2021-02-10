@@ -15,3 +15,8 @@ A numeric value representing HBGI
 \description{
 This function computes the high blood glucose index
 }
+\examples{
+mydatafile <- system.file("extdata", "my_data_file.csv", package = "cgmquantify")
+mydata <- readfile(mydatafile)
+HBGI(mydata)
+}

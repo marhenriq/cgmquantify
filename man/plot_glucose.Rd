@@ -9,7 +9,15 @@ plot_glucose(df)
 \arguments{
 \item{df}{Data frame read through readfile}
 }
+\value{
+None
+}
 \description{
 This function plots glycemic excursions over the
 time period in which data was collected.
+}
+\examples{
+mydatafile <- system.file("extdata", "my_data_file.csv", package = "cgmquantify")
+mydata <- readfile(mydatafile)
+plot_glucose(mydata)
 }

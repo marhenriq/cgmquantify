@@ -6,6 +6,10 @@
 #' @param df Data frame read through readfile
 #' @param sd Standard deviation indicating glycemic excursion, default = 1
 #' @return A numeric value representing MAGE
+#' @examples
+#' mydatafile <- system.file("extdata", "my_data_file.csv", package = "cgmquantify")
+#' mydata <- readfile(mydatafile)
+#' MGE(mydata)
 #' @export
 #' @importFrom stats sd
 MGE <- function(df, sd = 1) {
@@ -23,6 +27,10 @@ MGE <- function(df, sd = 1) {
 #'
 #' @param df Data frame read through readfile
 #' @return A numeric value representing MGN
+#' @examples
+#' mydatafile <- system.file("extdata", "my_data_file.csv", package = "cgmquantify")
+#' mydata <- readfile(mydatafile)
+#' MGN(mydata)
 #' @export
 #' @importFrom stats sd
 MGN <- function(df) {

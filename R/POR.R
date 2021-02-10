@@ -8,6 +8,10 @@
 #' @param sr Sampling rate inverse in minutes of the CGM (default is
 #' Dexcom -> 5 minutes)
 #' @return A numeric value representing POR
+#' @examples
+#' mydatafile <- system.file("extdata", "my_data_file.csv", package = "cgmquantify")
+#' mydata <- readfile(mydatafile)
+#' POR(mydata, sd = 1, sr = 5)
 #' @export
 #' @import stats
 POR <- function(df, sd = 1, sr = 5) {

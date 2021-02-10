@@ -16,3 +16,8 @@ A numeric value representing MGN
 This function computes the mean of normal glucose,
 glycemic excursions indicated by standard deviation, default = 1
 }
+\examples{
+mydatafile <- system.file("extdata", "my_data_file.csv", package = "cgmquantify")
+mydata <- readfile(mydatafile)
+MGN(mydata)
+}

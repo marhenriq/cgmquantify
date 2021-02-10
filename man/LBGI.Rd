@@ -15,3 +15,8 @@ A numeric value representing LBGI
 \description{
 This function computes the low blood glucose index
 }
+\examples{
+mydatafile <- system.file("extdata", "my_data_file.csv", package = "cgmquantify")
+mydata <- readfile(mydatafile)
+LBGI(mydata)
+}

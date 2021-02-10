@@ -17,3 +17,8 @@ of the intraday coefficients of variation.
 This function computes the intraday coefficient of variation
 summary statistics: mean, median, standard deviation of all days in data
 }
+\examples{
+mydatafile <- system.file("extdata", "my_data_file.csv", package = "cgmquantify")
+mydata <- readfile(mydatafile)
+intradaycv(mydata)
+}

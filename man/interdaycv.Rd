@@ -15,3 +15,8 @@ A numeric value representing interday cv
 \description{
 This function computes the interday coefficient of variation
 }
+\examples{
+mydatafile <- system.file("extdata", "my_data_file.csv", package = "cgmquantify")
+mydata <- readfile(mydatafile)
+interdaycv(mydata)
+}

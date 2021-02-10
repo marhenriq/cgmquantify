@@ -21,3 +21,8 @@ A numeric value representing POR
 This function computes the percent of time outside range
 (range in standard deviations from mean, default = 1).
 }
+\examples{
+mydatafile <- system.file("extdata", "my_data_file.csv", package = "cgmquantify")
+mydata <- readfile(mydatafile)
+POR(mydata, sd = 1, sr = 5)
+}
