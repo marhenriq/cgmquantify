@@ -5,7 +5,7 @@ Continuous glucose monitoring (CGM) systems provide real-time, dynamic glucose i
 
 Here, we provide functions to calculate glucose summary metrics, glucose variability metrics (as defined in clinical publications), and visualizations to visualize trends in CGM data.
 
-Link to CRAN: [https://cran.r-project.org/package=cgmquantify](URL)
+Link to package on CRAN can be found [here](https://cran.r-project.org/package=cgmquantify)
 
 User Guide
 Issue Tracking
