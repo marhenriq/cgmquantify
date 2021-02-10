@@ -1,6 +1,7 @@
 Package: cgmquantify
 Type: Package
 Title: Analyzing Glucose and Glucose Variability
+Link:  https://CRAN.R-project.org/package=cgmquantify 
 Version: 0.1.0
 Authors@R: c(person("Maria", "Henriquez", role = c("aut", "com", "cph", "cre", "trl"), email = "marhenriq@gmail.com"),
   person("Brinnae", "Bent", role = c("aut", "cph", "dtc"),
