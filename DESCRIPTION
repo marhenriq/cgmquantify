@@ -31,5 +31,7 @@ Suggests:
     rmarkdown
 Config/testthat/edition: 2, devtools
 VignetteBuilder: knitr
+URL: https://github.com/marhenriq/cgmquantify
+BugReports: https://github.com/marhenriq/cgmquantify/issues
 Depends: 
     R (>= 2.10)
